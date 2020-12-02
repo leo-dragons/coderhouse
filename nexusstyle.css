@@ -1,0 +1,102 @@
+body {
+  background-color: #28292b !important;
+  font-family: 'Ubuntu', sans-serif; }
+
+@media (max-width: 600px) {
+  body {
+    background-color: cyan !important; } }
+
+.start-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "start start start start"
+ ". . . ."
+ ". . . ."; }
+
+.nexustitle {
+  color: red;
+  font-weight: bold;
+  font-size: 50px; }
+
+.anilogo {
+  animation: rotate-scale-up .65s linear both; }
+
+.header__logo{
+	background-color: #7b002c;
+}  
+
+.start {
+  grid-area: start; }
+
+ul {
+  border: 2px solid white;
+  padding: .5em;
+  display: inline-block; }
+
+.flexmenu {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between; }
+
+.listitem {
+  color: white;
+  font-weight: bold; }
+
+.miscsection {
+  color: #ff2200; }
+
+p {
+  border: 2px solid white;
+  padding: .5em; }
+
+.readablecontent {
+  padding: 1em;
+  color: white;
+  font-style: normal; }
+
+.news__content {
+	background-color: #7b002c;
+}
+
+.news__content-highlight {
+	font-weight: bold;
+	width: 400px;
+}
+.tablecontent {
+  color: teal; }
+
+.side-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "side . . ."
+ "side . . ."
+ "side . . ."; }
+
+.side {
+  grid-area: side; }
+
+.socialmedia {
+  color: white; }
+
+.social__media{
+	width: 200px;
+}  
+
+.credits {
+  color: white;
+  font-style: italic; }
+
+.formtextcolor {
+  color: teal; }
+
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0); }
+  50% {
+    transform: scale(2) rotateZ(180deg); }
+  100% {
+    transform: scale(1) rotateZ(360deg); } }
